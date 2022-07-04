@@ -1,9 +1,9 @@
 import React from "react";
 import logoImage from "../../images/logo.png";
 
-export default function Logo() {
+export default function Logo({className}) {
     return (
-        <div>
+        <div className={className}>
             <img src={logoImage} alt="5peron logo"/>
         </div>
     )
