@@ -6,7 +6,7 @@ import { ReactComponent as IconPlus } from "../icons/plus.svg";
 export default function AboutUs() {
     return (
         <section>
-            <div className="flex flex-row flex-wrap justify-between max-w-[1728px] md:px-8 lg:px-16 xl:px-32 mx-auto pt-16 pb-12">
+            <div className="flex flex-row flex-wrap justify-between max-w-[1728px] md:px-8 lg:px-16 xl:px-24 2xl:px-32 mx-auto pt-16 pb-12">
                 <div className="flex flex-row flex-wrap justify-start font-sans">
                     <div className="h-[70px]">
                         <IconHeart className="h-full w-auto"/>
@@ -35,7 +35,7 @@ export default function AboutUs() {
                     </div>
                 </div>
             </div>
-            <p className="text-black text-2xl text-justify leading-9 max-w-[1728px] md:px-8 lg:px-16 xl:px-32 mx-auto pt-4 pb-16">Since the beginning of the full-scale war, our activities have been aimed at solving the problems of wartime. We are united by a common goal - to make our contribution to the preservation of modern Ukraine and ensuring its future</p>
+            <p className="text-black text-2xl text-justify leading-9 max-w-[1728px] md:px-8 lg:px-16 xl:px-24 2xl:px-32 mx-auto pt-4 pb-16">Since the beginning of the full-scale war, our activities have been aimed at solving the problems of wartime. We are united by a common goal - to make our contribution to the preservation of modern Ukraine and ensuring its future</p>
         </section>
     );
 }

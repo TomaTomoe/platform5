@@ -12,7 +12,7 @@ export default function NavBar() {
 
     return (
         <header className="bg-darkBlue">
-            <div className="flex flex-row flex-wrap justify-between max-w-[1728px] md:px-8 lg:px-16 xl:px-32 mx-auto">
+            <div className="flex flex-row flex-wrap justify-between max-w-[1728px] md:px-8 lg:px-16 xl:px-24 2xl:px-32 mx-auto">
                 <Logo className="flex-none lg:w-16 py-6"/>
                 <nav className="flex flex-1 text-white text-xl leading-6 font-medium font-sans uppercase justify-end items-end lg:pb-8">
                     <NavHashLink 
