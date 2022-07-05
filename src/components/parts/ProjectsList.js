@@ -10,7 +10,7 @@ export default function ProjectsList() {
     return (
         <section id="projects" className="pt-20 pb-16 max-w-[1728px] md:px-8 lg:px-16 xl:px-24 2xl:px-32 mx-auto">
             <h2 className="text-center text-black text-5xl leading-tight font-bold uppercase font-sans mb-16">наші проекти</h2>
-            <div className="flex flex-row flex-wrap justify-between mb-12">
+            <div className="lg:flex lg:flex-row lg:flex-wrap lg:justify-between mb-12">
                 <ProjectCard content={{
                     header: '5 Перон',
                     description: 'Наш перший і найбільший проєкт - забезпечення і функціонування волонтерської точки з надання допомоги і харчування на 5 пероні Львівського залізничного вокзалу під час масової міграції до Польші у лютому-березні',
