@@ -7,7 +7,7 @@ import Logo from "./lib/Logo";
 
 export default function Footer() {
     return (
-        <footer  className="bg-darkBlue">
+        <footer id="contacts" className="bg-darkBlue">
             <div className="flex flex-row flex-wrap justify-between max-w-[1728px] md:px-8 lg:px-16 xl:px-24 2xl:px-32 mx-auto">
                 <Logo className="flex-none lg:h-full py-8"/>
                 <div className="flex-none text-white pl-10 pt-8 pr-24">

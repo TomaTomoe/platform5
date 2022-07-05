@@ -5,7 +5,7 @@ import { ReactComponent as IconPlus } from "../icons/plus.svg";
 
 export default function AboutUs() {
     return (
-        <section>
+        <section id="about">
             <div className="flex flex-row flex-wrap justify-between max-w-[1728px] md:px-8 lg:px-16 xl:px-24 2xl:px-32 mx-auto pt-16 pb-12">
                 <div className="flex flex-row flex-wrap justify-start font-sans">
                     <div className="h-[70px]">
