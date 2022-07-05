@@ -5,7 +5,7 @@ import projectImage from "../../images/project-img.jpg";
 export default function ProjectCard({content}) {
     console.log('content', content)
     return (
-        <article className="bg-darkBlue max-w-[458px] p-10 rounded-2xl flex flex-col flex-wrap content-between mx-auto my-24 lg:mx-0 lg:my-12 xl:my-0">
+        <article className="bg-darkBlue max-w-[400px] 2xl:max-w-[458px] p-10 rounded-2xl flex flex-col flex-wrap content-between mx-auto my-24 lg:mx-0 lg:my-12 xl:my-12 2xl:my-0">
             <h3 className="text-white font-semibold text-[32px] leading-10 text-center font-sans mb-4 flex-none">{content.header}</h3>
             <p className="flex-auto text-white text-2xl leading-9 mb-8">{content.description}</p>
             <img src={content.cover || projectImage} className="flex-none rounded-[22px]" alt="Project illustration"/>
