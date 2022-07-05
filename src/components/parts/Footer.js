@@ -24,19 +24,19 @@ export default function Footer() {
                 </div>
                 <ul className="flex-1 text-white pt-7 text-xl">
                     <li>
-                        <HashLink smooth to="/#home" >Home</HashLink>
+                        <HashLink smooth to="/#home" >Головна</HashLink>
                     </li>
                     <li>
-                        <HashLink smooth to="/#about" >About Us</HashLink>
+                        <HashLink smooth to="/#about" >Про нас</HashLink>
                     </li>
                     <li>
-                        <HashLink smooth to="/#projects" >Our Projects</HashLink>
+                        <HashLink smooth to="/#projects" >Наші проекти</HashLink>
                     </li>
                     <li>
                         <HashLink smooth to="/#faq" >FAQ</HashLink>
                     </li>
                     <li>
-                        <HashLink smooth to="/#contacts" >Contacts</HashLink>
+                        <HashLink smooth to="/#contacts" >Контакти</HashLink>
                     </li>
                 </ul>
                 <div className="flex-none lg:w-56 text-center">
