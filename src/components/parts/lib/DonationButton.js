@@ -3,7 +3,7 @@ import React from "react";
 export default function DonationButton({style, className}) {
         
     function makeDonation() {
-        alert("Thank You!");
+        alert("Ви можете долучитися до проекту зателефонувавши нам чи написавши на імейл вказані у розділі 'Контакти'");
     }
 
     return (
