@@ -11,6 +11,6 @@ export default function DonationButton({style, className}) {
             onClick={makeDonation}
             style={style}
             className={`text-white bg-orange uppercase font-bold px-[50px] h-16 text-xl text-center ${className}`}
-            >DONATE</button>
+            >ДОЛУЧИТИСЯ</button>
     );
 }
