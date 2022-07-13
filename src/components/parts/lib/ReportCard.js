@@ -7,7 +7,9 @@ export default function ReportCard() {
         <article className="max-w-[326px] ">
             <Link to="/reports/peron.pdf" target={"_blank"}>
                 <img className="h-[186px] w-full" src={reportImage} alt="Report illustration"/>
-                <p className="text-2xl text-black font-medium pt-5 px-1">5 перон. Проєктний звіт</p>
+                <p className="text-black font-medium pt-5 px-1
+                    lg:text-xl
+                    xl:text-2xl">5 перон. Проєктний звіт</p>
             </Link>
         </article>
     )

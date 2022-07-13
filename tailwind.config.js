@@ -4,6 +4,11 @@ module.exports = {
     "./src/**/*.{js,jsx,ts,tsx}",
   ],
   theme: {
+    extend: {
+      screens: {
+        '3xl': '1728px',
+      }
+    },
     colors: {
       transparent: 'transparent',
       current: 'currentColor',
@@ -16,8 +21,7 @@ module.exports = {
     },
     fontFamily: {
       'sans': 'Montserrat, sans-serif',
-    },
-    extend: {},
+    },  
   },
   plugins: [],
 }

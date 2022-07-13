@@ -8,9 +8,21 @@ import projectCover3 from "../images/project-img-3.jpg";
 
 export default function ProjectsList() {
     return (
-        <section id="projects" className="pt-20 pb-16 max-w-[1728px] md:px-8 lg:px-16 xl:px-24 2xl:px-32 mx-auto">
-            <h2 className="text-center text-black text-5xl leading-tight font-bold uppercase font-sans mb-16">наші проекти</h2>
-            <div className="lg:flex lg:flex-row lg:flex-wrap lg:justify-between mb-12">
+        <section id="projects" className="pt-14 pb-0 max-w-[1728px] mx-auto
+            md:px-8 
+            lg:px-16
+            xl:px-16 xl:pt-16 xl:pb-16
+            2xl:px-16 2xl:pt-20
+            3xl:px-32">
+            <h2 className="text-center text-black leading-tight font-bold uppercase font-sans mb-4 text-2xl
+                md:text-3xl md:mb-0
+                lg:text-4xl lg:mb-4
+                xl:text-5xl xl:mb-16">наші проекти</h2>
+            <div className="mb-8
+                lg:flex lg:flex-row lg:flex-wrap lg:justify-around
+                xl:justify-between
+                2xl:justify-around
+                3xl:justify-between">
                 <ProjectCard content={{
                     header: '5 Перон',
                     description: 'Наш перший і найбільший проєкт - забезпечення і функціонування волонтерської точки з надання допомоги і харчування на 5 пероні Львівського залізничного вокзалу під час масової міграції до Польші у лютому-березні',

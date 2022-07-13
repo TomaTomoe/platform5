@@ -3,13 +3,29 @@ import React from "react";
 import projectImage from "../../images/project-img.jpg";
 
 export default function ProjectCard({content}) {
-    console.log('content', content)
+
     return (
-        <article className="bg-darkBlue max-w-[400px] 2xl:max-w-[458px] p-10 rounded-2xl flex flex-col flex-wrap content-between mx-auto my-24 lg:mx-0 lg:my-12 xl:my-12 2xl:my-0">
-            <h3 className="text-white font-semibold text-[32px] leading-10 text-center font-sans mb-4 flex-none">{content.header}</h3>
-            <p className="flex-auto text-white text-2xl leading-9 mb-8">{content.description}</p>
-            <img src={content.cover || projectImage} className="flex-none rounded-[22px]" alt="Project illustration"/>
-            {/* <DonationButton className={"flex-none mt-8 mx-auto"}/> */}
+        <article className="mx-auto my-8 max-w-[400px]
+            lg:mx-0 lg:my-8 lg:basis-1/2
+            xl:my-4 xl:basis-1/3
+            2xl:my-4 2xl:max-w-[458px]
+            3xl:my-4 3xl:max-w-[458px]">
+            <div className="bg-darkBlue p-10 rounded-2xl flex flex-col flex-wrap content-between h-full
+                xl:mx-1 xl:p-6
+                2xl:mx-0 2xl:p-10">
+                <h3 className="text-white font-semibold text-2xl leading-8 text-center font-sans mb-4 flex-none
+                    lg:text-2xl lg:leading-8
+                    xl:text-2xl xl:leading-8
+                    2xl:text-3xl 2xl:leading-8
+                    3xl:text-[32px] 3xl:leading-10">{content.header}</h3>
+                <p className="flex-auto text-white text-base mb-4
+                    lg:text-base lg:mb-4
+                    xl:text-lg xl:leading-6 xl:mb-4
+                    2xl:text-xl 2xl:leading-7 2xl:mb-8
+                    3xl:text-2xl 3xl:leading-9">{content.description}</p>
+                <img src={content.cover || projectImage} className="flex-none rounded-[22px]" alt="Project illustration"/>
+                {/* <DonationButton className={"flex-none mt-8 mx-auto"}/> */}
+            </div>
         </article>
     )
 }

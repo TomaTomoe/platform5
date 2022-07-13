@@ -11,7 +11,7 @@ import Footer from "../parts/Footer";
 
 export default function Home() {
     return (
-        <main className="min-w-[768px]">
+        <main>
             <Hero/>
             <AboutUs />
             <Activity/>
