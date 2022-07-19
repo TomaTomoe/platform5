@@ -15,7 +15,7 @@ export default function Hero() {
                     xl:text-5xl xl:leading-[58px] xl:max-w-3xl">ДОБРОВІЛЬНЕ ОБ’ЄДНАННЯ <br/> В ТИЛУ УКРАЇНИ</h1>
                 <p className="flex-auto px-4 text-white font-semibold text-center text-xl max-w-2xl
                     lg:text-2xl lg:max-w-4xl
-                    xl:text-3xl xl:max-w-7xl">Робимо соціальні проекти, надихаючись <a href="https://ukraine.un.org/uk/sdgs" target="_blank" rel="noreferrer">цілями сталого розвитку</a>, в умовах російської військової агресії</p>
+                    xl:text-3xl xl:max-w-7xl">Робимо соціальні проекти, надихаючись <a href="https://ukraine.un.org/uk/sdgs" target="_blank" rel="noreferrer"><u>цілями сталого розвитку</u></a>, в умовах російської військової агресії</p>
                 <DonationButton className={"flex-none"} />
             </div>
         </section>

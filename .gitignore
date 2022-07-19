@@ -10,6 +10,8 @@ node_modules
 
 # production
 /build
+cert.pem
+key.pem
 
 # misc
 .DS_Store
