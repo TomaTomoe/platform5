@@ -5,6 +5,11 @@ const express = require('express');
 const app = express();
 const port = process.env.port || '443';
 
+app.enable('trust proxy')
+app.use((req, res, next) => {
+    req.secure ? next() : res.redirect('https://' + req.headers.host + req.url)
+});
+
 app.use(express.static('./build'));
 
 app.get('index.html', function (req, res) {
