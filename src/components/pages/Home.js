@@ -17,8 +17,8 @@ export default function Home() {
             <Activity/>
             <ProjectsList/>
             <ReportsList/>
-            <MembersList/>
             <FAQ/>
+            <MembersList/>
             <Footer/>
         </main>
     );
