@@ -16,7 +16,6 @@ export default function DonationButton({style, className}) {
             accept-charset="utf-8">
             <input type="hidden" name="data" value={paymentData.data}/>
             <input type="hidden" name="signature" value={paymentData.signature}/>
-            <input type="image" src="//static.liqpay.ua/buttons/p1ru.radius.png" hidden/>
             <button type="submit"
                 style={style}
                 className={`text-white bg-orange uppercase font-bold px-[50px] h-16 text-xl text-center ${className}`}

@@ -37,14 +37,14 @@ const liqpay = new LiqPay(public_key, private_key);
 app.get('/getPayment', function (req, res) {
     const uniqId = uuidv4();
     const data = liqpay.cnb_object({
-        'action'         : 'paydonate',
-        'amount'         : '1',
-        'currency'       : 'USD',
-        'description'    : 'donation for ukrainians',
-        'order_id'       : uniqId,
-        'version'        : '3',
-        'language'       : 'en',
-        'result_url'     : '/',
+        "action"         : "paydonate",
+        "amount"         : "1",
+        "currency"       : "USD",
+        "description"    : "charitable donation",
+        "order_id"       : uniqId,
+        "version"        : "3",
+        "language"       : "en",
+        "result_url"     : "/",
         });
     res.json(data);
   });
