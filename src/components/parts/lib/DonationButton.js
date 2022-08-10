@@ -5,23 +5,18 @@ export default function DonationButton({style, className}) {
     const [paymentData, setPaymentData] = useState([]);
 
     useEffect(() => {
-        let mounted = true;
         getPaymentData()
           .then(data => {
-            if(mounted) {
-                setPaymentData(data)
-            }
+            setPaymentData(data)
           })
-        return () => mounted = false;
       }, [])
-
-    console.log("paymentData", paymentData.signature);
 
     return (
         <form method="POST" action="https://www.liqpay.ua/api/3/checkout" 
             accept-charset="utf-8">
             <input type="hidden" name="data" value={paymentData.data}/>
             <input type="hidden" name="signature" value={paymentData.signature}/>
+            <input type="image" src="//static.liqpay.ua/buttons/p1ru.radius.png" hidden/>
             <button type="submit"
                 style={style}
                 className={`text-white bg-orange uppercase font-bold px-[50px] h-16 text-xl text-center ${className}`}

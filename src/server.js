@@ -4,7 +4,7 @@ const https = require('https');
 const path = require('path');
 const fs = require('fs');
 const express = require('express');
-const LiqPay = require('liq-sdk');
+const LiqPay = require('liqpayjs-sdk');
 const { v4: uuidv4 } = require('uuid');
 
 const app = express();
@@ -46,6 +46,5 @@ app.get('/getPayment', function (req, res) {
         'language'       : 'en',
         'result_url'     : '/',
         });
-    console.log("data", data);
     res.json(data);
   });
