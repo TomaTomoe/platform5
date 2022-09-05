@@ -18,12 +18,12 @@ export default function Footer() {
                 <div className="flex-none text-white pl-0 pt-8 pb-4
                     md:pr-14 md:pl-10 md:pb-0
                     lg:pr-24">
-                    <address className="text-base leading-5 not-italic pb-4">
+                    <address className="text-sm sm:text-base leading-5 not-italic pb-4">
                         Громадська Організація "5 Перон"<br/>
                         <a href="mailto:5peron.npo@gmail.com" className="underline">5peron.npo@gmail.com</a>.<br/>
                         <a href="tel:+380957875384">+380 95 787 53 84</a><br/>
                     </address>
-                    <address className="text-base leading-5 not-italic pb-4">
+                    <address className="text-sm sm:text-base leading-5 not-italic pb-4">
                         Благодійний Фонд "5 Перон"<br/>
                         <a href="mailto:5peron.cf@gmail.com" className="underline">5peron.cf@gmail.com</a>.<br/>
                         <a href="tel:+380972141517">+380 97 214 15 17</a><br/>

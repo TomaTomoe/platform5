@@ -44,7 +44,7 @@ app.get('/getPayment', function (req, res) {
         "order_id"       : uniqId,
         "version"        : "3",
         "language"       : "en",
-        "result_url"     : "/",
+        "result_url"     : "https://5peron.org/",
         });
     res.json(data);
   });
