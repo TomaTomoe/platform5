@@ -60,12 +60,12 @@ export default function Footer() {
                     <div className="flex flex-row flex-wrap justify-end h-[110px]
                         md:item-start md:pt-4
                         lg:items-center lg:pt-0">
-                        <a href="https://www.facebook.com/5peronUA" target="_blank" rel="noreferrer">
+                        <a href="https://www.facebook.com/5peron.npo" target="_blank" rel="noreferrer">
                             <IconFacebook className="w-8 mr-2
                                 lg:w-10
                                 xl:w-14" />
                         </a>
-                        <a href="https://www.instagram.com/5peronua" target="_blank" rel="noreferrer">
+                        <a href="https://www.instagram.com/5_peron/" target="_blank" rel="noreferrer">
                             <IconInstagram className="w-8 mr-2
                                 lg:w-10
                                 xl:w-14" />
