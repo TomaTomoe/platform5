@@ -6,7 +6,6 @@ import ProjectsList from "../parts/ProjectsList";
 import ReportsList from "../parts/ReportsList";
 import MembersList from "../parts/MembersList";
 import FAQ from "../parts/FAQ";
-import Footer from "../parts/Footer";
 
 
 export default function Home() {
@@ -19,7 +18,6 @@ export default function Home() {
             <ReportsList/>
             <FAQ/>
             <MembersList/>
-            <Footer/>
         </main>
     );
 }
