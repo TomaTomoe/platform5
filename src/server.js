@@ -17,10 +17,6 @@ app.use((req, res, next) => {
 
 app.use(express.static('./build'));
 
-app.get('index.html', function (req, res) {
-    res.sendFile('index.html', { root: './build/'});
-});
-
 const privateKey = fs.readFileSync(path.join(__dirname, 'key.pem' ));
 const certificate = fs.readFileSync(path.join(__dirname, 'cert.pem' ));
 
@@ -64,4 +60,8 @@ app.get('/getPaymentNPO', function (req, res) {
         "result_url"     : "https://5peron.org/thank_you",
         });
     res.json(data);
+  });
+
+  app.get('*', function (req, res) {
+    res.sendFile('index.html', { root: './build/'});
   });
