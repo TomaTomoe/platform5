@@ -24,7 +24,7 @@ export default function Donation() {
                             md:text-xl md:pb-3 md:leading-7 md:h-[100px]
                             lg:text-2xl lg:pb-4
                             xl:text-[32px] xl:leading-10 xl:pb-8">Громадська Організація "5 Перон"</h3>
-                        <img src={imageNPO} alt="" className="object-contain h-[300px]"/>
+                        <img src={imageNPO} alt="Громадська Організація '5 Перон'" className="object-contain h-[300px]"/>
                         <p className="text-black text-lg pt-4 pb-6 leading-5
                             md:leading-7 md:h-[152px]
                             lg:text-xl lg:pb-8 lg:h-[140px]
@@ -35,8 +35,8 @@ export default function Donation() {
                         <h3 className="text-black font-semibold text-xl pb-3 leading-6
                             md:text-xl md:pb-3 md:leading-7 md:h-[100px]
                             lg:text-2xl lg:pb-4
-                            xl:text-[32px] xl:leading-10 xl:pb-8">Благодійна Організація "Благодійний Фонд "5 Перон"</h3>
-                            <img src={imageCF} alt="" className="object-contain h-[300px]"/>
+                            xl:text-[32px] xl:leading-10 xl:pb-8">Благодійна Організація "Благодійний Фонд "5 Перон""</h3>
+                            <img src={imageCF} alt="Благодійна Організація 'Благодійний Фонд 5 Перон'" className="object-contain h-[300px]"/>
                         <p className="text-black text-lg pt-4 pb-6 leading-5
                             md:leading-7 md:h-[152px]
                             lg:text-xl lg:pb-8 lg:h-[140px]
