@@ -30,11 +30,10 @@ https.createServer({
 }, app).listen(port);
 
 
-const private_key = process.env.LIQ_PRIVATE_KEY;
-const public_key = process.env.LIQ_PUBLICK_KEY;
-const liqpay = new LiqPay(public_key, private_key);
-
-app.get('/getPayment', function (req, res) {
+app.get('/getPaymentNPO', function (req, res) {
+    const private_key_NPO = process.env.LIQ_PRIVATE_KEY_NPO;
+    const public_key_NPO = process.env.LIQ_PUBLICK_KEY_NPO;
+    const liqpay = new LiqPay(public_key_NPO, private_key_NPO);
     const uniqId = uuidv4();
     const data = liqpay.cnb_object({
         "action"         : "paydonate",
@@ -44,7 +43,25 @@ app.get('/getPayment', function (req, res) {
         "order_id"       : uniqId,
         "version"        : "3",
         "language"       : "en",
-        "result_url"     : "https://5peron.org/",
+        "result_url"     : "https://5peron.org/thank_you",
+        });
+    res.json(data);
+  });
+
+  app.get('/getPaymentCF', function (req, res) {
+    const private_key_CF = process.env.LIQ_PRIVATE_KEY_CF;
+    const public_key_CF = process.env.LIQ_PUBLICK_KEY_CF;
+    const liqpay = new LiqPay(public_key_CF, private_key_CF);
+    const uniqId = uuidv4();
+    const data = liqpay.cnb_object({
+        "action"         : "paydonate",
+        "amount"         : "1",
+        "currency"       : "USD",
+        "description"    : "charitable donation",
+        "order_id"       : uniqId,
+        "version"        : "3",
+        "language"       : "en",
+        "result_url"     : "https://5peron.org/thank_you",
         });
     res.json(data);
   });

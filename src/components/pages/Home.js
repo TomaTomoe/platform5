@@ -10,7 +10,7 @@ import FAQ from "../parts/FAQ";
 
 export default function Home() {
     return (
-        <main>
+        <main className="mt-[73px] md:mt-0">
             <Hero/>
             <AboutUs />
             <Activity/>

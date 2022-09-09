@@ -24,7 +24,7 @@ export default function ProjectCard({content}) {
                     2xl:text-xl 2xl:leading-7 2xl:mb-8
                     3xl:text-2xl 3xl:leading-9">{content.description}</p>
                 <img src={content.cover || projectImage} className="flex-none rounded-[22px]" alt="Project illustration"/>
-                {/* <DonationButton className={"flex-none mt-8 mx-auto"}/> */}
+                {/* <DonationButton className={"flex-none mt-8 mx-auto"}  title="DONATE" aim="/getPaymentNPO"/> */}
             </div>
         </article>
     )
