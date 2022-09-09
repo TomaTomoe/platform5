@@ -19,7 +19,7 @@ export default function DonationButton({style, className, title, aim}) {
             <input type="hidden" name="signature" value={paymentData.signature}/>
             <button type="submit"
                 style={style}
-                className={`text-white bg-orange uppercase font-bold px-[40px] h-12 text-lg sm:px-[50px] sm:h-16 sm:text-xl text-center ${className}`}
+                className={`text-white bg-orange uppercase font-bold px-[40px] h-12 text-lg text-center ${className}`}
                 >{title}</button>
         </form>
     );
