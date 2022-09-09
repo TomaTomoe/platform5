@@ -56,7 +56,7 @@ export default function Footer() {
                 <div className="hidden flex-none
                     md:block
                     lg:w-56 lg:text-center">
-                    {/* <DonationButton className={"mt-8"} style={{paddingLeft: '60px', paddingRight: '60px'}}/> */}
+                    {/* <DonationButton className={"mt-8"} style={{paddingLeft: '60px', paddingRight: '60px'}} title="DONATE" aim="/getPaymentNPO"/>*/}
                     <div className="flex flex-row flex-wrap justify-end h-[110px]
                         md:item-start md:pt-4
                         lg:items-center lg:pt-0">

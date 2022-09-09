@@ -6,6 +6,7 @@ import { ReactComponent as IconFacebook } from "../icons/facebook.svg";
 import { ReactComponent as IconInstagram } from "../icons/instagram.svg";
 import { ReactComponent as MenuIcon } from "../icons/menu.svg";
 // import DonationButton from "./lib/DonationButton";
+import { Link } from "react-router-dom";
 import Menu from "./lib/Menu";
 import Logo from "./lib/Logo";
 
@@ -29,12 +30,14 @@ export default function NavBar() {
                 xl:px-16 
                 2xl:px-24
                 3xl:px-32">
-                <Logo className="flex-none py-[15px]
-                    md:w-9 md:py-4 
-                    lg:w-10 lg:py-4
-                    xl:w-12
-                    2xl:w-14
-                    3xl:w-16"/>
+                <Link to="/">
+                    <Logo className="flex-none py-[15px]
+                        md:w-9 md:py-4 
+                        lg:w-10 lg:py-4
+                        xl:w-12
+                        2xl:w-14
+                        3xl:w-16"/>
+                </Link>
                 <div className="flex flex-col self-center p-4
                     md:hidden" onClick={openMenu}>
                     <MenuIcon/>
@@ -85,7 +88,7 @@ export default function NavBar() {
                                 2xl:w-12" />
                         </a>
                     </div>
-                    {/* <DonationButton style={{paddingLeft: '60px', paddingRight: '60px'}}/> */}
+                    {/* <DonationButton style={{paddingLeft: '60px', paddingRight: '60px'}} title="DONATE" aim="/getPaymentNPO"/> */}
                 </div>
             </div>
         </header>

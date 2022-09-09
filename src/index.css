@@ -21,3 +21,19 @@ body {
 * {
   box-sizing: border-box !important;
 }
+
+.full-height {
+  height: calc(100vh - 273px);
+}
+
+@media screen and (max-width: 640px) {
+  .full-height {
+    height: calc(100vh - 273px);
+  }
+}
+
+@media (min-width: 641px) and (max-width: 768px) {
+  .full-height {
+    height: calc(100vh - 297px);
+  }
+}

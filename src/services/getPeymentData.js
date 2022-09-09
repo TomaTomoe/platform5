@@ -1,5 +1,5 @@
-export function getPaymentData() {
-    return fetch('/getPayment')
+export function getPaymentData(aim) {
+    return fetch(aim)
       .then(data => data.json())
   }
   

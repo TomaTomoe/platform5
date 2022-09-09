@@ -1,13 +1,11 @@
 import React from "react";
-import DonationButton from "./lib/DonationButton";
+import LinkButton from "./lib/LinkButton";
 import heroImage from "../images/hero-bg.jpg";
 import heroImageMobile from "../images/hero-bg_mobile.jpg";
 
 export default function Hero() {
     return (
-        <section id="home" className="w-full relative h-[400px] mt-[73px]
-            sm:mt-[73px]
-            md:mt-0
+        <section id="home" className="w-full relative h-[400px]
             lg:h-[500px]">
             <img srcSet={`${heroImageMobile} 300w, ${heroImage} 768w`} alt="hero background" className="absolute object-cover w-full h-[inherit] z-0"/>
             <div className="relative z-10 h-full flex flex-col flex-wrap content-center items-center pt-8 pb-12
@@ -20,7 +18,7 @@ export default function Hero() {
                     sm:text-xl sm:max-w-2xl
                     lg:text-2xl lg:max-w-4xl
                     xl:text-3xl xl:max-w-7xl">Робимо соціальні проекти, надихаючись <a href="https://ukraine.un.org/uk/sdgs" target="_blank" rel="noreferrer"><u>цілями сталого розвитку</u></a>, в умовах російської військової агресії</p>
-                <DonationButton className={"flex-none"} />
+                <LinkButton className="flex-none" url="/donation" title="ПІДТРИМАТИ" />
             </div>
         </section>
     );
