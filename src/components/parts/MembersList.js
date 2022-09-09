@@ -38,7 +38,7 @@ export default function MembersList() {
                 }}/>
                 <MemberCard content={{
                     photo: memberImage3,
-                    name: 'Ала'
+                    name: 'Алла'
                 }}/>
                 <MemberCard content={{
                     photo: memberImage4,
