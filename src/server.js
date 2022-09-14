@@ -35,7 +35,7 @@ app.get('/getPaymentNPO', function (req, res) {
         "action"         : "paydonate",
         "amount"         : "1",
         "currency"       : "USD",
-        "description"    : "Charitable donation for drone DJI",
+        "description"    : "Charitable donation for social projects",
         "order_id"       : uniqId,
         "version"        : "3",
         "language"       : "en",
