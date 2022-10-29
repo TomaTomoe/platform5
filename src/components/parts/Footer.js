@@ -41,7 +41,7 @@ export default function Footer() {
                         <HashLink smooth to="/#about" >Про нас</HashLink>
                     </li>
                     <li>
-                        <HashLink smooth to="/#projects" >Наші проекти</HashLink>
+                        <Link smooth to="/projects" >Всі проекти</Link>
                     </li>
                     <li>
                         <HashLink smooth to="/#faq" >FAQ</HashLink>
@@ -65,7 +65,7 @@ export default function Footer() {
                                 lg:w-10
                                 xl:w-14" />
                         </a>
-                        <a href="https://www.instagram.com/5_peron/" target="_blank" rel="noreferrer">
+                        <a href="https://www.instagram.com/5peron_fond" target="_blank" rel="noreferrer">
                             <IconInstagram className="w-8 mr-2
                                 lg:w-10
                                 xl:w-14" />
