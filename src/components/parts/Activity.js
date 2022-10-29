@@ -5,7 +5,9 @@ import { ReactComponent as IconCircle } from "../icons/circle.svg";
 import { ReactComponent as IconShield } from "../icons/shield.svg";
 import background from "../icons/cross.svg";
 
-export default function Activity() {
+export default function Activity({activityData}) {
+    const {activityList, activityTitle} = activityData;
+
     return (
         <section style={{ backgroundImage: `url(${background})`, backgroundPosition: '-150px -170px' }} 
             className="bg-orange pt-9 pb-0
@@ -17,7 +19,7 @@ export default function Activity() {
                 lg:px-16 lg:text-4xl
                 xl:px-16 xl:text-5xl 
                 2xl:px-16
-                3xl:px-32">Діяльність</h2>
+                3xl:px-32">{activityTitle}</h2>
             <div className="max-w-[1728px] mx-auto
                 md:px-8 md:flex md:flex-row md:flex-wrap md:justify-between
                 lg:px-16 

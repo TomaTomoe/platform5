@@ -11,7 +11,7 @@ export default function MemberCard({content}) {
                 lg:w-[150px]
                 xl:w-[170px]
                 2xl:w-[200px]
-                3xl:w-[200px]" src={content.photo} alt="Member illustration"/>
+                3xl:w-[200px]" src={content.photo} alt={content.photoAlt}/>
             <p className="text-black text-base text-center pt-2 w-[100px]
                 md:text-lg md:w-[150px] md:pt-4
                 lg:text-xl lg:w-[150px] lg:pt-4

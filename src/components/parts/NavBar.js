@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from 'react';
 import { useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 import { ReactComponent as IconFacebook } from "../icons/facebook.svg";
 import { ReactComponent as IconInstagram } from "../icons/instagram.svg";
@@ -51,11 +52,11 @@ export default function NavBar() {
                         to="/#about"
                         className={`pr-6 lg:pr-12 ${location.hash === "#about" ? "text-orange" : ""}`}
                     >ПРО НАС</NavHashLink>
-                    <NavHashLink 
+                    <NavLink 
                         smooth
-                        to="/#projects"
-                        className={`pr-6 lg:pr-12 ${location.hash === "#projects" ? "text-orange" : ""}`}
-                    >НАШІ ПРОЕКТИ</NavHashLink>
+                        to="/projects"
+                        className={`pr-6 lg:pr-12 ${location.pathname === "/projects" ? "text-orange" : ""}`}
+                    >ВСІ ПРОЕКТИ</NavLink>
                     <NavHashLink 
                         smooth
                         to="/#faq"
@@ -75,13 +76,13 @@ export default function NavBar() {
                     <div className="flex flex-row flex-wrap justify-end items-end h-full pb-3
                         lg:pb-4
                         xl:pb-8">
-                        <a href="https://www.facebook.com/5peronUA" target="_blank" rel="noreferrer">
+                        <a href="https://www.facebook.com/5peron.npo" target="_blank" rel="noreferrer">
                             <IconFacebook className="w-8 mr-2
                                 lg:w-9
                                 xl:w-10
                                 2xl:w-12" />
                         </a>
-                        <a href="https://www.instagram.com/5peronua" target="_blank" rel="noreferrer">
+                        <a href="https://www.instagram.com/5peron_fond" target="_blank" rel="noreferrer">
                             <IconInstagram className="w-8 mr-2
                                 lg:w-9
                                 xl:w-10

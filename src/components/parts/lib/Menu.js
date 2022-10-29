@@ -1,6 +1,7 @@
 import React from "react";
 import { useRef } from "react";
 import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 import { NavHashLink } from "react-router-hash-link";
 import { useOutsideClick } from './useOutsideClick';
 import { ReactComponent as CloseButton } from "../../icons/close.svg";
@@ -25,12 +26,12 @@ export default function Menu({ isOpen, onClose, location }) {
                     onClick={onClose}
                     className={`block pb-5 ${location.hash === "#about" ? "text-orange" : ""}`}
                 >ПРО НАС</NavHashLink>
-                <NavHashLink 
+                <NavLink 
                     smooth
-                    to="/#projects"
+                    to="/projects"
                     onClick={onClose}
-                    className={`block pb-5 ${location.hash === "#projects" ? "text-orange" : ""}`}
-                >НАШІ ПРОЕКТИ</NavHashLink>
+                    className={`block pb-5 ${location.pathname === "/projects" ? "text-orange" : ""}`}
+                >ВСІ ПРОЕКТИ</NavLink>
                 <NavHashLink 
                     smooth
                     to="/#faq"
@@ -50,7 +51,7 @@ export default function Menu({ isOpen, onClose, location }) {
                 <a href="https://www.facebook.com/5peron.npo" target="_blank" rel="noreferrer">
                     <IconFacebook className="w-11 mr-2" />
                 </a>
-                <a href="https://www.instagram.com/5_peron/" target="_blank" rel="noreferrer">
+                <a href="https://www.instagram.com/5peron_fond" target="_blank" rel="noreferrer">
                     <IconInstagram className="w-11 mr-2"/>
                 </a>
             </div>
