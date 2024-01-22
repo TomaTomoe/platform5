@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { getPaymentData } from '../../../services/getPeymentData';
 
-export default function DonationButton({style, className, title, aim}) {
+export default function DonationButton({style, className, title, aim, id}) {
     const [paymentData, setPaymentData] = useState([]);
 
     useEffect(() => {
@@ -13,7 +13,7 @@ export default function DonationButton({style, className, title, aim}) {
       }, [aim])
 
     return (
-        <form method="POST" action="https://www.liqpay.ua/api/3/checkout" 
+        <form method="POST" id={id} action="https://www.liqpay.ua/api/3/checkout" 
             accept-charset="utf-8">
             <input type="hidden" name="data" value={paymentData.data}/>
             <input type="hidden" name="signature" value={paymentData.signature}/>
