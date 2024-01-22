@@ -18,7 +18,7 @@ export default function Hero() {
                     sm:text-xl sm:max-w-2xl
                     lg:text-2xl lg:max-w-4xl
                     xl:text-3xl xl:max-w-7xl">Робимо соціальні проекти, надихаючись <a href="https://ukraine.un.org/uk/sdgs" target="_blank" rel="noreferrer"><u>цілями сталого розвитку</u></a>, в умовах російської військової агресії</p>
-                <LinkButton className="flex-none" url="/donation" title="ПІДТРИМАТИ" />
+                <LinkButton id="link_to_donation" className="flex-none" url="/donation" title="ПІДТРИМАТИ" />
             </div>
         </section>
     );
